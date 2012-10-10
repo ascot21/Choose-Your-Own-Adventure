@@ -1,0 +1,14 @@
+id,story,path1,path2,finish
+1,"You are hiking in Snake Canyon when you find yourself lost in the strange, dimly lit Cave of Time. Gradually you can make out two passageways. One curves downward to the right; the other leads upward to the left. It occurs to you that the one leading down may go to the past and the one leading up may go to the future. Which way will you choose?\nType '1' for the tunnel leading down\nType '2' for the tunnel leading up",4,5,false
+4,"Door 8 or 10",8,10,false
+5,"Door 6 or 16",6,16,false
+6,"Door 22 or 114",22,114,false
+8,"Door 17 or 18",17,18,false
+10,"Door 20 or 21",20,21,false
+17,"Door 26 or 28",26,28,false
+18,"Door 29 or 30",29,30,false
+20,"Door 93 or 93",93,93,false
+21,"Door 33 or 35",33,35,false
+22,"Door 36 or 37",36,37,false
+114,"Door 61 or 61",61,61,false
+
