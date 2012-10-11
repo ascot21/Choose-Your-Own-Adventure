@@ -2,8 +2,11 @@ require_relative 'story'
 
 class Game
 
+  attr_reader :score
+
   def initialize
     @maingame = Story.new
+    @score = 0
   end
 
   def instructions
@@ -35,19 +38,38 @@ class Game
   def load_next(id)
     item = @maingame.get_fork(id)
     while item.finish == "false"
-      puts item.story
-      route = gets
-      next_fork = item.path(gets)
-      puts next_fork
+      puts item.story.to_s
+      route = Integer(gets)
+      until route == 1 || route == 2
+        puts "Please enter a 1 or 2."
+        route = Integer(gets)
+      end
+      if route == 1
+        next_fork = item.path1
+      elsif route == 2
+        next_fork = item.path2
+      end
       item = @maingame.get_fork(next_fork)
+      @score += 10
     end
-    puts "\e[H\e[2J"
-    puts "Game Over!"
-
+    game_over
   end
 
   def clear_screen
     puts "\e[H\e[2J"
   end
+
+  def game_over
+    puts "\e[H\e[2J"
+    puts "   ____                         ___                 _
+  / ___| __ _ _ __ ___   ___   / _ \\__   _____ _ __| |
+ | |  _ / _` | '_ ` _ \\ / _ \\ | | | \\ \\ / / _ \\ '__| |
+ | |_| | (_| | | | | | |  __/ | |_| |\\ V /  __/ |  |_|
+  \\____|\\__,_|_| |_| |_|\\___|  \\___/  \\_/ \\___|_|  (_)"
+
+  puts "You scored #{@score} points!"
+  end
+
+
 
 end
