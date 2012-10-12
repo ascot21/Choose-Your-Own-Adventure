@@ -2,7 +2,7 @@ Overview
 ========
 A Ruby command line game based on widely popular series of children's books.  The game is from a second-person point of view, with the reader assuming the role of the protagonist and making choices that determine the main character's actions and the plot's outcome.
 
-Story loosely based on "The Cave of Time" book.  See a [graph of the paths](http://www.codinghorror.com/.a/6a0120a85dcdae970b0163057f849b970d-pi).
+Story loosely based on "The Cave of Time" book.  See a [graph of the paths](/doc/story_chart.png).
 
 
 Features
