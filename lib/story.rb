@@ -9,7 +9,7 @@ class Story
   def initialize
     @all_forks = {}
     CSV.foreach("forkslist.csv", :headers => true) do |row|
-      @all_forks[row[0]] = Fork.new(row[0],row[1],row[2],row[3],row[4])
+      @all_forks[row[0]] = Fork.new(row[0],row[1],row[2],row[3],row[4],row[5])
     end
   end
 

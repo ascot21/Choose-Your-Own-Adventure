@@ -1,87 +1,1 @@
-id,story,path1,path2,finish
-1,"You are hiking in Snake Canyon when you find yourself lost in the strange, dimly lit Cave of Time. Gradually you can make out two passageways. One curves downward to the right; the other leads upward to the left. It occurs to you that the one leading down may go to the past and the one leading up may go to the future.
-
-Which way will you choose?
-
-Type '1' for the tunnel leading down
-Type '2' for the tunnel leading up",4,5,false
-4,"Door 8 or 10",8,10,false
-5,"Door 6 or 16",6,16,false
-6,"Door 22 or 114",22,114,false
-8,"Door 17 or 18",17,18,false
-10,"Door 20 or 21",20,21,false
-11,"Door 13 or 12",13,12,false
-12,"Door 66 or 78",66,78,false
-13,"Door 14 or 15",14,15,false
-14,"Merrie England (end)",nil,nil,true
-15,"982 AD (end)",nil,nil,true
-16,"Door 25 or 24",25,24,false
-17,"Door 26 or 28",26,28,false
-18,"Door 29 or 30",29,30,false
-20,"Door 93 or 93",93,93,false
-21,"Door 33 or 35",33,35,false
-22,"Door 36 or 37",36,37,false
-22,"Door 36 or 37",36,37,false
-24,"Door 40 or 38",40,38,false
-25,"Door 44 or 45",44,45,false
-26,"Door 46 or 47",46,47,false
-28,"Door 51 or 51",51,51,false
-29,"Door 52 or 53",52,53,false
-30,"Door 92 or 54",92,54,false
-31,"Dying sun (end)",nil,nil,true
-32,"Door 58 or 64",58,64,false
-33,"Door 68 or 69",68,69,false
-35,"Door 80 or 76",80,76,false
-36,"Door 11 or 11",11,11,false
-37,"Door 11 or 11",11,11,false
-38,"Door 87 or 82",87,81,false
-40,"Door 82 or 115",82,115,false
-44,"Apocalypse (end)",nil,nil,true
-45,"Return Home (end)",nil,nil,true
-46,"Migrate (end)",nil,nil,true
-47,"Door 50 or 49",50,49,false
-49,"Door 25 or 25",25,25,false
-50,"Door 81 or 81",81,81,false
-51,"Return Home 11 years later",nil,nil,true
-52,"Join Cavemen (end)",nil,nil,true
-53,"Fall to Death",nil,nil,true
-54,"Door 98 or 101",98,101,false
-56,"Door 57 or 60",57,60,false
-57,"Meta-CYOA (end)",nil,nil,true
-58,"Door 63 or 62",63,62,true
-60,"Monster (end)",nil,nil,true
-61,"Door 104 or 106",36,37,false
-62,"Surf's Up (end)",nil,nil,true
-63,"Boa (end)",nil,nil,true
-64,"Door 102 or 102",36,37,false
-66,"Door 70 or 74",70,74,false
-68,"Sinks (end)",nil,nil,true
-70,"Door 72 or 103",72,103,false
-72,"Return Home (end)",nil,nil,true
-74,"Eaten Alive (end)",nil,nil,true
-76,"Cadillac (end)",nil,nil,true
-78,"Hanging (end)",nil,nil,false
-79,"Door 88 or 86",88,86,false
-80,"Red Sun (end)",nil,nil,true
-81,"Return Home (end)",nil,nil,true
-82,"Slave (end)",nil,nil,true
-83,"Door 85 or 84",85,84,false
-86,"London 1940 (end)",nil,nil,true
-87,"Lost at Sea",nil,nil,true
-88,"Door 91 or 90",91,90,false
-90,"Return Home (end)",nil,nil,false
-91,"T-Rex (end)",nil,nil,true
-92,"Door 56 or 56",56,56,false
-93,"Door 32 or 31",32,31,false
-98,"Travel the world (end)",nil,nil,true
-101,"Primordial Time",nil,nil,true
-102,"Return Home (end)",nil,nil,true
-103,"Return Home (end)",nil,nil,true
-104,"Door 107 or 107",107,107,false
-106,"Door 111 or 111",111,111,false
-107,"Ship's Captain",nil,nil,true
-111,"Return Home (end)",nil,nil,true
-113,"18th Century (end)",nil,nil,true
-114,"Door 61 or 61",61,61,false
-115,"Return Home (end)",nil,nil,true
-
+id,story,path1,path2,finish,score1,"You are hiking in Snake Canyon when you find yourself lost in the strange, dimly lit Cave of Time. Gradually you can make out two passageways. One curves downward to the right; the other leads upward to the left. It occurs to you that the one leading down may go to the past and the one leading up may go to the future.Which way will you choose?Type '1' for the tunnel leading downType '2' for the tunnel leading up",4,5,FALSE,1004,Door 8 or 10,8,10,FALSE,3005,Door 6 or 16,6,16,FALSE,1006,Door 22 or 114,22,114,FALSE,3008,Door 17 or 18,17,18,FALSE,30010,Door 20 or 21,20,21,FALSE,20011,Door 13 or 12,13,12,FALSE,50012,Door 66 or 78,66,78,FALSE,30013,Door 14 or 15,14,15,FALSE,20014,Merrie England (end),nil,nil,TRUE,50015,982 AD (end),nil,nil,TRUE,20016,Door 25 or 24,25,24,FALSE,30017,Door 26 or 28,26,28,FALSE,30018,Door 29 or 30,29,30,FALSE,10020,Door 93 or 93,93,93,FALSE,30021,Door 33 or 35,33,35,FALSE,30022,Door 36 or 37,36,37,FALSE,20024,Door 40 or 38,40,38,FALSE,50025,Door 44 or 45,44,45,FALSE,30026,Door 46 or 47,46,47,FALSE,20028,Door 51 or 51,51,51,FALSE,50029,Door 52 or 53,52,53,FALSE,20030,Door 92 or 54,92,54,FALSE,30031,Dying sun (end),nil,nil,TRUE,30032,Door 58 or 64,58,64,FALSE,10033,Door 68 or 69,68,79,FALSE,30035,Door 80 or 76,80,76,FALSE,30036,Door 11 or 11,11,11,FALSE,20037,Door 11 or 11,11,11,FALSE,50038,Door 87 or 82,87,81,FALSE,30040,Door 82 or 115,82,115,FALSE,20044,Apocalypse (end),nil,nil,TRUE,50045,Return Home (end),nil,nil,TRUE,20046,Migrate (end),nil,nil,TRUE,30047,Door 50 or 49,50,49,FALSE,30049,Door 25 or 25,25,25,FALSE,10050,Door 81 or 81,81,81,FALSE,30051,Return Home 11 years later,nil,nil,TRUE,30052,Join Cavemen (end),nil,nil,TRUE,20053,Fall to Death,nil,nil,TRUE,50054,Door 98 or 101,98,101,FALSE,30056,Door 57 or 60,57,60,FALSE,20057,Meta-CYOA (end),nil,nil,TRUE,50058,Door 63 or 62,63,62,FALSE,20060,Monster (end),nil,nil,TRUE,30061,Door 104 or 106,36,37,FALSE,30062,Surf's Up (end),nil,nil,TRUE,10063,Boa (end),nil,nil,TRUE,30064,Door 102 or 102,36,37,FALSE,30066,Door 70 or 74,70,74,FALSE,20068,Sinks (end),nil,nil,TRUE,50070,Door 72 or 103,72,103,FALSE,30072,Return Home (end),nil,nil,TRUE,20074,Eaten Alive (end),nil,nil,TRUE,50076,Cadillac (end),nil,nil,TRUE,20078,Hanging (end),nil,nil,TRUE,30079,Door 88 or 86,88,86,FALSE,30080,Red Sun (end),nil,nil,TRUE,10081,Return Home (end),nil,nil,TRUE,30082,Slave (end),nil,nil,TRUE,30083,Door 85 or 84,85,84,FALSE,20086,London 1940 (end),nil,nil,TRUE,50087,Lost at Sea,nil,nil,TRUE,30088,Door 91 or 90,91,90,FALSE,20090,Return Home (end),nil,nil,TRUE,50091,T-Rex (end),nil,nil,TRUE,20092,Door 56 or 56,56,56,FALSE,30093,Door 32 or 31,32,31,FALSE,30098,Travel the world (end),nil,nil,TRUE,100101,Primordial Time,nil,nil,TRUE,300102,Return Home (end),nil,nil,TRUE,300103,Return Home (end),nil,nil,TRUE,200104,Door 107 or 107,107,107,FALSE,500106,Door 111 or 111,111,111,FALSE,300107,Ship's Captain,nil,nil,TRUE,200111,Return Home (end),nil,nil,TRUE,500113,18th Century (end),nil,nil,TRUE,200114,Door 61 or 61,61,61,FALSE,300115,Return Home (end),nil,nil,TRUE,500
