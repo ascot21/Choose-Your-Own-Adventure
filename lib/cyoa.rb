@@ -1,6 +1,5 @@
 require_relative 'game'
 
-
 go = Game.new
 go.instructions
 go.get_user_name

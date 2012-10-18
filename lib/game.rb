@@ -28,12 +28,6 @@ class Game
   puts "To get started, type your name."
   end
 
-  #prompt helper
-  def prompt(*args)
-    print(*args)
-    gets
-  end
-
   def get_user_name
     @name = gets.chomp
     @name = @name.capitalize
@@ -42,7 +36,8 @@ class Game
   def load_next(id)
     item = @maingame.get_fork(id)
     while item.finish == "FALSE"
-      puts item.story.to_s
+      clear_screen
+      puts item.story.split(/\\n/)
       route = Integer(gets)
       until route == 1 || route == 2
         puts "Please enter a 1 or 2."
@@ -56,6 +51,8 @@ class Game
       item = @maingame.get_fork(next_fork)
       @total_score += item.score.to_i
     end
+    clear_screen
+    puts item.story.split(/\\n/)
     game_over
     add_to_high_scores
     show_high_scores
@@ -66,7 +63,6 @@ class Game
   end
 
   def game_over
-    puts "\e[H\e[2J"
     puts "   ____                         ___                 _
   / ___| __ _ _ __ ___   ___   / _ \\__   _____ _ __| |
  | |  _ / _` | '_ ` _ \\ / _ \\ | | | \\ \\ / / _ \\ '__| |

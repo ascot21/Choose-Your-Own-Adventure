@@ -11,12 +11,4 @@ class Fork
     @score = score
   end
 
-  def end?
-    if @finish == true
-      true
-    else
-      false
-    end
-  end
-
 end
