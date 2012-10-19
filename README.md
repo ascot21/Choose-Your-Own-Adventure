@@ -8,20 +8,20 @@ Story loosely based on "The Cave of Time" book.  See doc/story_chart.png for an 
 Features
 ========
   - game instructions run when game starts
-  - user inputs name and gender - all used throughout the game
+  - user inputs name which is used at the end of the game
   - user presented with "forks in the road" where you must choose with path to take
   - "forks in the road" saved in a csv file
   - each path has an assigned number of points
   - total score tabulated at the end
+  - top scores save to csv file (scores command shows top scores)
 
 Future Features
 ===============
-- ability to add new "forks in the road"
+- ability to add new "forks in the road" (would require user to know where in the path to place it)
 - add user carrying a weapon of choice (selected at the beginning of the game)
-- top scores save to csv file (scores command shows top scores)
-- ASCII art integrated
+- more ASCII art integrated
 - make this a Ruby gem
 
 Dependencies
 ============
-None
+Colorize gem
