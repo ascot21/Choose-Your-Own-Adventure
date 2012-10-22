@@ -14,13 +14,7 @@ class Game
   puts ""
   puts "Welcome to the game of".center(80)
 
-  puts <<-CAVE_OF_TIME
-    _____ _             ____                         __   _____ _
-   |_   _| |__   ___   / ___|__ ___   _____    ___  / _| |_   _(_)_ __ ___   ___
-     | | | '_ \\ / _ \\ | |   / _` \\ \\ / / _ \\  / _ \\| |_    | | | | '_ ` _ \\ / _ \\
-     | | | | | |  __/ | |___ (_| |\\ V /  __/ | (_) |  _|   | | | | | | | | |  __/
-     |_| |_| |_|\\___|  \\____\\__,_| \\_/ \\___|  \\___/|_|     |_| |_|_| |_| |_|\\___|
-  CAVE_OF_TIME
+  File.open("forks/instructions.txt", "r").each_line { |file| puts file }
   puts ""
   puts "~~~~ A Choose Your Own Adventure Game ~~~~".center(80)
   puts "\nThis is a game where you choose what happens next in the story. It all depends on the choices you make. How does the story end? Only you can find out! And the best part is that you can start over and go ahead until you've had not one but many incredibly daring experiences!\n\n"
@@ -29,8 +23,7 @@ class Game
   end
 
   def get_user_name
-    @name = gets.chomp
-    @name = @name.capitalize
+    @name = gets.chomp.capitalize
   end
 
   def load_next(id)
@@ -43,19 +36,14 @@ class Game
         puts "Please enter a 1 or 2."
         route = Integer(gets)
       end
-      if route == 1
-        next_fork = item.path1
-      elsif route == 2
-        next_fork = item.path2
-      end
+      next_fork = item.path1 if route == 1
+      next_fork = item.path2 if route == 2
       item = @maingame.get_fork(next_fork)
       @total_score += item.score.to_i
     end
     clear_screen
     puts item.story.split(/\\n/)
     game_over
-    add_to_high_scores
-    show_high_scores
   end
 
   def clear_screen
@@ -64,12 +52,14 @@ class Game
 
   def game_over
     puts "   ____                         ___                 _
-  / ___| __ _ _ __ ___   ___   / _ \\__   _____ _ __| |
- | |  _ / _` | '_ ` _ \\ / _ \\ | | | \\ \\ / / _ \\ '__| |
- | |_| | (_| | | | | | |  __/ | |_| |\\ V /  __/ |  |_|
-  \\____|\\__,_|_| |_| |_|\\___|  \\___/  \\_/ \\___|_|  (_)"
+    / ___| __ _ _ __ ___   ___   / _ \\__   _____ _ __| |
+   | |  _ / _` | '_ ` _ \\ / _ \\ | | | \\ \\ / / _ \\ '__| |
+   | |_| | (_| | | | | | |  __/ | |_| |\\ V /  __/ |  |_|
+    \\____|\\__,_|_| |_| |_|\\___|  \\___/  \\_/ \\___|_|  (_)"
 
-  puts "You scored #{@total_score} points #{@name.chomp}!".upcase.colorize(:green).center(70)
+    puts "You scored #{@total_score} points #{@name.chomp}!".upcase.colorize(:green).center(70)
+    add_to_high_scores
+    show_high_scores
   end
 
   def get_top_scores
@@ -88,7 +78,7 @@ class Game
     else
       low_score = 0  #if there are no high scores
     end
-    if @total_score > low_score
+    if @total_score > low_score #if score should be in top ten
       if @top_scores.length < 10
         @top_scores[@top_scores.length + 1] = {:id => @top_scores.length + 1,:score => @total_score,:name => @name,:date => Date.today.to_s}
       else
